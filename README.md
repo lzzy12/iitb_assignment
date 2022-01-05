@@ -1,0 +1,1 @@
+![App Screenshot](screenshots/Screenshot.png?raw=true "Screenshot")
