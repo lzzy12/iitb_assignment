@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iitb_assignment/app/app_colors.dart';
 
-import 'package:get/get.dart';
 import 'package:iitb_assignment/app/drawer_tile.dart';
 
 class HomeView extends StatelessWidget {
@@ -8,6 +8,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.bgColor,
       appBar: AppBar(
         title: const Text('HomeView'),
         centerTitle: true,
