@@ -16,6 +16,7 @@ class DrawerTile extends StatelessWidget {
       style: NeumorphicStyle(
           boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
           color: AppColors.bgColor,
+          intensity: 1,
           depth: -10,
           lightSource: LightSource.topLeft),
       child: Stack(
