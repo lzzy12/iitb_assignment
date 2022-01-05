@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iitb_assignment/app/drawer_tile.dart';
 
-
 class HomeView extends StatelessWidget {
   final mockTiles = List.generate(10, (index) => const DrawerTile());
   @override
@@ -16,11 +15,10 @@ class HomeView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: GridView(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-          ),
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: 250,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10),
           children: mockTiles,
         ),
       ),
