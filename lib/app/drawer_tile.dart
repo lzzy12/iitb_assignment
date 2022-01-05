@@ -14,7 +14,7 @@ class DrawerTile extends StatelessWidget {
       decoration: const BoxDecoration(
           color: Color.fromARGB(255, 210, 213, 218),
           borderRadius: BorderRadius.all(Radius.circular(20))),
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(15),
       child: Container(
           padding: EdgeInsets.zero,
           decoration: const BoxDecoration(
